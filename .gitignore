@@ -1,0 +1,3 @@
+# ignore node_modules directory
+node_modules/
+# all the files inside this will be ignored by git
