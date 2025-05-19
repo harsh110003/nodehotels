@@ -6,9 +6,10 @@ const MenuItem = require('./models/MenuItem');
 
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());  //req.body store parsed data
+require('dotenv').config();
 
 
-
+const PORT = process.env.PORT || 3000;
 
 
 
@@ -61,6 +62,6 @@ app.use('/menuitem', menuRoutes)
 
 
  
-app.listen(3000 , () => {
+app.listen(PORT , () => {
     console.log('listening to port 3000')
 })
